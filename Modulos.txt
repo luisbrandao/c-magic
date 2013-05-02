@@ -1,0 +1,128 @@
+Módulos.txt
+Detalhe de cada arquivo
+
+Luis Alexandre
+v 1.0 » 28/10/2009 » Primeira versão
+
+
+
+=================================== Base ===========================================
+c-magic.c
+	- Função main
+	- Loop principal
+	- tratador de condiçoes especiais
+
+definicoes.h
+	- Variaveis e definições genéricas
+================================ Genérico ==========================================
+
+funcoesA.h
+ » funcoesA.c
+	- Funções principais
+		- Limpa_tudo (Inicia jogadores)
+		- Placar
+		- conta_vivos (Descobre quantos jogadores ainda estão em cena)
+		- cold_start (Prove toda a configuração inicial do jogo e devolve o número de jogadores) 
+
+funcoesB.h
+ » funcoesB.c
+	- Funções auxiliares
+		- auto_target (escolhe um alvo automaticamente caso só haja 2 jogadores)
+		- target (pede para o jogador escolher um alvo e garante que a escolha seja válida)
+	- Ataques genéricos
+		- cajado
+		- GL_base_ataque
+		- GL_area_ataque
+		- GL_mp_drain
+		- GL_concentra
+
+================================= Classes ========================================
+MagoAzul.h
+	- consantes específicas
+ » MagoAzul.c
+	- Funcões relacionadas
+		- acao_azul
+		- opcoes_azul
+	- Ataques específicos
+		- MA_regeneracao
+		- MA_congelar
+		- MA_concentrar
+
+MagoBranco.h
+	- consantes específicas
+ » MagoBranco.c
+	- Funcões relacionadas
+		- acao_azul
+		- opcoes_azul
+	- Ataques específicos
+		- MB_cura
+		- MB_haste
+		- MB_conc
+
+MagoVerde.h
+	- consantes específicas
+ » MagoVerde.c
+	- Funcões relacionadas
+		- acao_verde
+		- opcoes_verde
+	- Ataques específicos
+		- MG_esporos
+		- MG_veneno
+		- MG_hpdrain
+		- MG_enrolar
+		- MG_mpdrain
+
+MagoVermelho.h
+	- consantes específicas
+ » MagoVermelho.c
+	- Funcões relacionadas
+		- acao_vermelho
+		- opcoes_vermelho
+	- Ataques específicos
+		- MV_cura_leve
+		- MV_negatis
+		- MV_concentrar
+
+MagoNegro.h
+	- consantes específicas
+ » MagoNegro.c
+	- Funcões relacionadas
+		- acao_negro
+		- opcoes_negro
+	- Ataques específicos
+		- MN_estigma	
+		- MN_maldicao
+		- MN_hpdrain
+		- MN_mpdrain
+		- MN_charge
+
+==================================== AIs =========================================
+rayka.h
+	- Constantes especificas
+	- informações de versão
+ » rayka.c
+	- Função principal
+		- rayka_acoes
+	- Ataques específicos
+	 	- Ataques específicos
+
+monera.h
+	- Constantes especificas
+	- Informaçoes da versão
+ » monera.c
+ 	- Função princial
+ 		- monera_acoes
+
+================================ Documentação ====================================
+classes.ods
+	- Relação de ataques/danos de cada classe
+
+makefile
+	- Automatizador de copilação
+
+Modulos.txt
+	- Este aquivo.
+	- Descrição de todas as partes do jogo
+
+
+================================ Temp área ==========================================
